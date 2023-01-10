@@ -15,11 +15,22 @@ export class HomeComponent {
   
   "El two-way data bindin en Angular nos permite modificar el valor de una propiedad en la vista el valor tambien se actualiza en el modelo de datos";
 
-  // show = true;
+  show = true;
+  estadoBoton = "OCULTAR"
 
   ocultar(){
-    // this.show = false;
-    // console.log(this.show)
+    console.log(this.show)
+    if (this.show = true) {
+      this.show = false;
+      this.estadoBoton = "MOSTRAR"
+    }
+    if (this.show = false) {
+      this.show = true
+      this.estadoBoton = "OCULTAR"
+    }
+    // this.show = true
+    console.log(this.show)
+    
   }
 
 }

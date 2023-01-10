@@ -17,8 +17,9 @@
     </div>
     <div>
         <p>Event binding</p>
-        <button id="boton" (click)="ocultar()">hide</button>
-        <div id="contenido">
+        <button id="boton" (click)="ocultar()">{{estadoBoton}}</button>
+        <!-- <input type="button" [(ngModel)]="estado" (click)="ocultar()" value="{{estadoBoton}}"> -->
+        <div *ngIf="show">
             Event Binfing, es el mecanismo de data binding mediante el cual trabaja con
             los eventos que se encuentran en el DOM
         </div>
