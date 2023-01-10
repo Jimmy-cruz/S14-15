@@ -1,0 +1,32 @@
+<!-- <p>home works!</p> -->
+<div>
+    <H1>SESION 14</H1>
+    <div>
+        <h2>Componente Padre</h2>
+        <input type="text" [(ngModel)]="textoPadre">
+    </div>
+    <div>
+        <app-hijo [textoHijo]="textoPadre" ></app-hijo>
+    </div>
+</div>
+
+<div>
+    <H1>SESION 15</H1>
+    <div>
+        <h1>{{titulo}}</h1>
+    </div>
+    <div>
+        <p>Event binding</p>
+        <button id="boton" (click)="ocultar()">hide</button>
+        <div id="contenido">
+            Event Binfing, es el mecanismo de data binding mediante el cual trabaja con
+            los eventos que se encuentran en el DOM
+        </div>
+    </div>
+    <div>
+        <p>Two way binding</p>
+        <p>{{To_way}}</p>
+        <textarea name="" id="" cols="30" rows="10" [(ngModel)]="To_way">{{To_way}}</textarea>
+    </div>
+</div>
+
